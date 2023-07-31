@@ -27,7 +27,7 @@ const Home = () => {
     },
     {
       id: 4,
-      title: "useReducer Increment Decrement",
+      title: "useState Increment Decrement",
       src: "./images/usestate.png",
       to: "/usestate",
     },
