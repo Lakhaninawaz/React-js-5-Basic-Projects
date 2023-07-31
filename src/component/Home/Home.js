@@ -37,12 +37,6 @@ const Home = () => {
       src: "./images/todo.png",
       to: "/todo",
     },
-    {
-      id: 6,
-      title: "Todo List",
-      src: "./images/wheather.png",
-      to: "/wheather",
-    },
   ]);
 
   const renderCards = () => {
