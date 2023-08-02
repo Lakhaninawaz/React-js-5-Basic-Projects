@@ -2,9 +2,6 @@ import React, { useEffect, useState } from 'react'
 import WeatherCard from './weatherCard';
 import "../style.css"
 
-
-// https://api.openweathermap.org/data/2.5/weather?q=rajkot&appid=f440e3eeb45880f4b5211390b485a97d
-
 const Temp= () => {
 
     const [searchValue, setSearchValue] = useState("Delhi");
@@ -12,7 +9,7 @@ const Temp= () => {
 
     const getWeatherInput = async () => {
         try {
-            let url = `https://api.openweathermap.org/data/2.5/weather?q=${searchValue}&units=metric&appid=f440e3eeb45880f4b5211390b485a97d`;
+            let url = `https://api.openweathermap.org/data/2.5/weather?q=${searchValue}&units=metric&appid=process.env.API_ID`;
 
             const res = await fetch(url);
 
